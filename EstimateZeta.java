@@ -4,7 +4,7 @@ public class EstimateZeta{
     //Zeta(n), n > 1
     int n = 2;
     
-    //number of arrays created that will be tested for pairwise coprimeness
+    //number of arrays created that will be tested for pairwise coprimality
     int iter = 10000;
     
     //maximum value of random numbers generated for arrays
@@ -34,7 +34,7 @@ public class EstimateZeta{
   
   
   
-  //method that takes two of numbers, tells you if they are coprime or not
+  //method that takes two of numbers, tests coprimality
   
   public static boolean isCoprime(int num1, int num2) {
         
@@ -50,7 +50,7 @@ public class EstimateZeta{
   }
     
     
-  //method that takes an array of numbers, tells you if all possible pairs are coprime
+  //method that takes an array of numbers, returns true if all possible pairs are coprime
   
   public static boolean isCoprimeArray(int[] arr) {
     
@@ -67,7 +67,7 @@ public class EstimateZeta{
   }
   
   
-  //method that generates a large number of random arrays, tests coprimeness, and retursn ratio
+  //method that generates a large number of random arrays, tests coprimality, and returns ratio
   
   public static double Zeta(int n, int iter, int max) {
     
